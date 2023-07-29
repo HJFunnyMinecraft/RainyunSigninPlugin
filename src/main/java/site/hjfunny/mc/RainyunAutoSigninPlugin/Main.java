@@ -11,12 +11,14 @@ import java.net.URL;
 
 public class Main extends JavaPlugin implements CommandExecutor {
 
-    private static final String API_URL = "https://api.v2.rainyun.com/user/reward/tasks";
+    private static final String API_URL_REWARD_TASKS = "https://api.v2.rainyun.com/user/reward/tasks";
+    private static final String API_URL_POINT_RENEW = "https://api.v2.rainyun.com/product/point_renew";
 
     @Override
     public void onEnable() {
         getLogger().info("雨云签到插件 已启用！");
         getCommand("rsi").setExecutor(this);
+        getCommand("rrn").setExecutor(this);
     }
 
     @Override
