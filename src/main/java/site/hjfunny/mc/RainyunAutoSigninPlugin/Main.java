@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class RainyunAutoSigninPlugin extends JavaPlugin implements CommandExecutor {
+public class Main extends JavaPlugin implements CommandExecutor {
 
     private static final String API_URL = "https://api.v2.rainyun.com/user/reward/tasks";
 
