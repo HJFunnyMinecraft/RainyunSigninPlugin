@@ -43,7 +43,7 @@ public class Main extends JavaPlugin implements CommandExecutor {
 
             // Send the POST request
             try {
-                URL url = new URL(API_URL);
+                URL url = new URL(API_URL_REWARD_TASKS);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("POST");
                 connection.setRequestProperty("x-api-key", apiKey);
